@@ -2,7 +2,7 @@
 //import reactLogo from './assets/react.svg';
 //import './App.css'
 import {React} from 'react';
-import { Container } from "./components/container/container";
+import { Catalog } from './components/Catalog/catalog';
 import { Header } from "./components/header/header";
 import { Navigation } from './components/navigation/navigation';
 
@@ -13,8 +13,7 @@ export const App = ()=> {
     <Header />
   <main>
       <Navigation />
-      <section>
-      </section>
+      <Catalog />
   </main>  
   <footer>
   </footer>
