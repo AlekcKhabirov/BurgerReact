@@ -2,6 +2,9 @@
 npm create vite@latest
 npm i
 npm run dev
+git init
+git checout -b 'day1'
+git push --set-upstream origin day1
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.

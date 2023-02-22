@@ -1,7 +1,7 @@
 import style from "./header.module.css";
 import logo from "../../assets/img/logo.svg";
 import { Container } from "../container/container";
-
+import style from "./header.module.css";
 
 export const Header =()=>{
     return(
