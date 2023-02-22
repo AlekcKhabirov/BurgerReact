@@ -14,6 +14,6 @@ export const OrderGoods =(props)=>(
                                 <span className="currency">₽</span>
                                 </p>
                             </div>
-                            <Count/>
+                            <Count count={1}/>
                         </li>
 );

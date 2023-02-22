@@ -5,12 +5,17 @@ import { Container } from '../container/container.jsx';
 export const Navigation =()=>{ 
     return (
     <nav className={style.navigation}>
-        <Container>
-            <div className={style.container}>
+        <Container className={style.container}>
+            
                 <ul className={style.list}>
                     <li className={style.item}>
-                        <button className={classNames(style.button,style.button_burger, style.button_active)}>Бургеры</button>
+                        <button className={classNames(style.button,active.category === i?style.button_active: '',)}
+                        style = {{backgroundImage:'url(${item.image})'}}
+                        onClick ={()=>{
+                            displatch(changeCategory({indexCategory:i}));
+                        }}>{item.rus}</button>
                     </li>
+
                     <li className={style.item}>
                         <button className={classNames(style.button,style.button_snack)}>Закуски</button>
                     </li>
@@ -36,7 +41,7 @@ export const Navigation =()=>{
                         <button className={classNames(style.button,style.button_sauce)}>Соусы</button>
                     </li>
                 </ul>
-            </div>
+            
         </Container>
     </nav>
     );

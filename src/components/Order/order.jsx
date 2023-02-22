@@ -1,6 +1,10 @@
 
 
-
+const orderList =[
+    'беляш',
+    'чак-чак',
+    'кыстыбый'
+];
 
 export const Order =()=>{
     return(
@@ -14,7 +18,7 @@ export const Order =()=>{
 
                 <div className={style.wrap_list}>
                     <ul className={style.list}>
-
+                        {orderList.map((item,i) =><OrderGoods key={i} title={item}/>)}
                     </ul>
 
                 <div className={style.total}>

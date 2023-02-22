@@ -3,8 +3,12 @@ npm create vite@latest
 npm i
 npm run dev
 git init
-git checout -b 'day1'
+git checout -b 'day1' -создать ветку
 git push --set-upstream origin day1
+
+npm install @reduxjs/toolkit
+
+npm install react-redux
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
