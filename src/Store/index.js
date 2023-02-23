@@ -2,14 +2,23 @@ import { configureStore } from '@reduxjs/toolkit';
 
 import logger from 'redux-logger';
 
-import categoryReducer from './Category/categorySlice.js.js';
+import categoryReducer from './Category/categorySlice';
+
 
 const logger=(store)=>(next)=>(action)=>{
     console.log(store.getstore());
     next(action);
 };
 
-const store = configureStore({
+export const store = configureStore((
+    reducer:{
+        category: categoryReducer,
+    }
+))
+
+
+
+/*const store = configureStore({
     category: categoryReducer,
     middleware: (getDefaultMiddleware) =>[...getDefaultMiddleware(),logger],
 });
